@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify, session
 import os
 import re
 import uuid
+import json
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_google_genai import GoogleGenerativeAI, HarmBlockThreshold, HarmCategory
 from langchain_community.document_loaders.csv_loader import CSVLoader
